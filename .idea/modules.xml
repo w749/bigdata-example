@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hbase-test/hbase-test.iml" filepath="$PROJECT_DIR$/hbase-test/hbase-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hdfs-test/hdfs-test.iml" filepath="$PROJECT_DIR$/hdfs-test/hdfs-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-test/kafka-test.iml" filepath="$PROJECT_DIR$/kafka-test/kafka-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-utils.iml" filepath="$PROJECT_DIR$/test-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
+    </modules>
+  </component>
+</project>

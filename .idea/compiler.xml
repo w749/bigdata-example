@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kafka-test" />
+        <module name="hdfs-test" />
+        <module name="hbase-test" />
+        <module name="utils" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hbase-test" target="8" />
+      <module name="hdfs-test" target="8" />
+      <module name="kafka-test" target="8" />
+      <module name="project-test" target="8" />
+      <module name="test-utils" target="8" />
+      <module name="utils" target="8" />
+      <module name="wer" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
