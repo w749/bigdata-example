@@ -13,6 +13,7 @@
         <module>hdfs-test</module>
         <module>kafka-test</module>
         <module>utils</module>
+        <module>mapreduce-test</module>
     </modules>
 
     <properties>

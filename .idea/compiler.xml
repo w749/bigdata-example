@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="kafka-test" />
+        <module name="mapreduce-test" />
         <module name="hdfs-test" />
         <module name="hbase-test" />
         <module name="utils" />
@@ -16,6 +17,7 @@
       <module name="hbase-test" target="8" />
       <module name="hdfs-test" target="8" />
       <module name="kafka-test" target="8" />
+      <module name="mapreduce-test" target="8" />
       <module name="project-test" target="8" />
       <module name="test-utils" target="8" />
       <module name="utils" target="8" />
