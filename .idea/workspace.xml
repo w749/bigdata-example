@@ -5,36 +5,126 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4b74e9e-8496-41f2-84bb-6e888d9d5344" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_11_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_servlet_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_guice_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_6_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapreduce-test/mapreduce-test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapreduce-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/WordCountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/resources/core-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/resources/hdfs-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/resources/mapred-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/resources/ssl-client.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/resources/yarn-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/test/java/org/mlamp/mapreduce/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_base_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_json_provider_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jcip_jcip_annotations_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_re2j_re2j_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_nimbus_jose_jwt_4_41_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp_okhttp_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_guice_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_configuration2_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_htrace_htrace_core4_4_1_0_incubating.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_admin_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_client_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_common_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_core_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_crypto_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_identity_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_server_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_simplekdc_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_util_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_asn1_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_config_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_pkix_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_util_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_xdr_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_token_provider_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_3_19_v20170502.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_3_19_v20170502.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_3_19_v20170502.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_3_19_v20170502.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_3_19_v20170502.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_3_19_v20170502.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_3_19_v20170502.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_3_19_v20170502.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/combiner/WCCombiner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/combiner/WCCombinerDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/comparable/PhoneComparable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/comparable/PhoneComparableDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/comparable/PhoneComparableMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/comparable/PhoneComparableReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/compress/PhoneCompress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/mapjoin/OrderMapJoinDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/mapjoin/OrderMapJoinMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/outputformat/LogDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/outputformat/LogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/outputformat/LogOutputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/outputformat/LogRecordWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/partitioner/MyPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/partitioner/PhonePartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/phone/PhoneDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/phone/PhoneMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/phone/PhoneReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/phone/PhoneWritable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/reducejoin/OrderBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/reducejoin/OrderDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/reducejoin/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/reducejoin/OrderReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/src/test/java/org/mlamp/mapreduce/MRTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_servlet_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_servlet_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_guice_1_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_6_2_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_5_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_2_7_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_3_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_2_7_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_3_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_2_7_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_3_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_2_7_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_client_3_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_2_7_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_3_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_7_5.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbase-test/src/main/java/org/huawei/security/LoginUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/hbase-test/src/main/java/org/huawei/security/LoginUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs-test/src/main/scala/org/huawei/security/KerberosUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs-test/src/main/scala/org/huawei/security/KerberosUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapreduce-test/mapreduce-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mapreduce-test/mapreduce-test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapreduce-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapreduce-test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/WordCountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce/wc/WordCountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapreduce-test/src/main/resources/core-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapreduce-test/src/main/resources/hdfs-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapreduce-test/src/main/resources/mapred-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapreduce-test/src/main/resources/ssl-client.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapreduce-test/src/main/resources/yarn-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapreduce-test/src/test/java/org/mlamp/mapreduce/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +181,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="jdk.selected.JAVA_MODULE" value="8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mapreduce-test/data" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -103,77 +193,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.mlamp.mapreduce.outputformat" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mapreduce-test/data" />
       <recent name="$PROJECT_DIR$/hdfs-test" />
       <recent name="$PROJECT_DIR$/hbase-test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Test.worCountTest">
-    <configuration name="ConsumeTest.consumeSeekOffset" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.kafka.consume.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.kafka.consume" />
-      <option name="MAIN_CLASS_NAME" value="org.example.kafka.consume.ConsumeTest" />
-      <option name="METHOD_NAME" value="consumeSeekOffset" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsumeTest.consumeSeekTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.kafka.consume.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.kafka.consume" />
-      <option name="MAIN_CLASS_NAME" value="org.example.kafka.consume.ConsumeTest" />
-      <option name="METHOD_NAME" value="consumeSeekTime" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProducerTest.producerLargeData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.kafka.producer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.kafka.producer" />
-      <option name="MAIN_CLASS_NAME" value="org.example.kafka.producer.ProducerTest" />
-      <option name="METHOD_NAME" value="producerLargeData" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProducerTest.producerPartitionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.kafka.producer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.kafka.producer" />
-      <option name="MAIN_CLASS_NAME" value="org.example.kafka.producer.ProducerTest" />
-      <option name="METHOD_NAME" value="producerPartitionTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test.worCountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MRTest.mapJoinTest">
+    <configuration name="MRTest.compressTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mapreduce-test" />
       <extension name="coverage">
         <pattern>
@@ -182,7 +212,71 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.mlamp.mapreduce" />
-      <option name="MAIN_CLASS_NAME" value="org.mlamp.mapreduce.Test" />
+      <option name="MAIN_CLASS_NAME" value="org.mlamp.mapreduce.MRTest" />
+      <option name="METHOD_NAME" value="compressTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MRTest.mapJoinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mapreduce-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mlamp.mapreduce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mlamp.mapreduce" />
+      <option name="MAIN_CLASS_NAME" value="org.mlamp.mapreduce.MRTest" />
+      <option name="METHOD_NAME" value="mapJoinTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MRTest.outputFormatTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mapreduce-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mlamp.mapreduce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mlamp.mapreduce" />
+      <option name="MAIN_CLASS_NAME" value="org.mlamp.mapreduce.MRTest" />
+      <option name="METHOD_NAME" value="outputFormatTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MRTest.reduceJoinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mapreduce-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mlamp.mapreduce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mlamp.mapreduce" />
+      <option name="MAIN_CLASS_NAME" value="org.mlamp.mapreduce.MRTest" />
+      <option name="METHOD_NAME" value="reduceJoinTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MRTest.worCountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mapreduce-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mlamp.mapreduce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mlamp.mapreduce" />
+      <option name="MAIN_CLASS_NAME" value="org.mlamp.mapreduce.MRTest" />
       <option name="METHOD_NAME" value="worCountTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -217,20 +311,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ProducerTest.producerPartitionTest" />
-      <item itemvalue="JUnit.ConsumeTest.consumeSeekOffset" />
-      <item itemvalue="JUnit.ProducerTest.producerLargeData" />
-      <item itemvalue="JUnit.ConsumeTest.consumeSeekTime" />
       <item itemvalue="Remote JVM Debug.Unnamed" />
-      <item itemvalue="JUnit.Test.worCountTest" />
+      <item itemvalue="JUnit.MRTest.outputFormatTest" />
+      <item itemvalue="JUnit.MRTest.reduceJoinTest" />
+      <item itemvalue="JUnit.MRTest.mapJoinTest" />
+      <item itemvalue="JUnit.MRTest.compressTest" />
+      <item itemvalue="JUnit.MRTest.worCountTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test.worCountTest" />
-        <item itemvalue="JUnit.ConsumeTest.consumeSeekTime" />
-        <item itemvalue="JUnit.ConsumeTest.consumeSeekOffset" />
-        <item itemvalue="JUnit.ProducerTest.producerLargeData" />
-        <item itemvalue="JUnit.ProducerTest.producerPartitionTest" />
+        <item itemvalue="JUnit.MRTest.mapJoinTest" />
+        <item itemvalue="JUnit.MRTest.worCountTest" />
+        <item itemvalue="JUnit.MRTest.compressTest" />
+        <item itemvalue="JUnit.MRTest.reduceJoinTest" />
+        <item itemvalue="JUnit.MRTest.outputFormatTest" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +342,10 @@
       <workItem from="1645514470703" duration="23000" />
       <workItem from="1650785468554" duration="27350000" />
       <workItem from="1651043010634" duration="2027000" />
-      <workItem from="1651133354032" duration="4966000" />
+      <workItem from="1651133354032" duration="5109000" />
+      <workItem from="1651202078896" duration="21012000" />
+      <workItem from="1651647781636" duration="12455000" />
+      <workItem from="1651721891928" duration="39727000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码，工具代码">
       <created>1651045031360</created>
@@ -257,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651045031360</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mapreduce">
+      <created>1651143224351</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651143224351</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +370,28 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="测试代码，工具代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试代码，工具代码" />
+    <MESSAGE value="mapreduce" />
+    <option name="LAST_COMMIT_MESSAGE" value="mapreduce" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///opt/maven-3.8.4/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.5/hadoop-mapreduce-client-core-2.7.5.jar!/org/apache/hadoop/mapreduce/Cluster.class</url>
+          <line>92</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///opt/maven-3.8.4/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.5/hadoop-mapreduce-client-core-2.7.5.jar!/org/apache/hadoop/mapreduce/JobSubmitter.class</url>
+          <line>75</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///opt/maven-3.8.4/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.5/hadoop-mapreduce-client-core-2.7.5.jar!/org/apache/hadoop/mapreduce/JobSubmitter.class</url>
+          <line>78</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
