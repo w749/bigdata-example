@@ -14,6 +14,7 @@
         <module>kafka-test</module>
         <module>utils</module>
         <module>mapreduce-test</module>
+        <module>zookeeper-test</module>
     </modules>
 
     <properties>

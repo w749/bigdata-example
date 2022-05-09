@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="kafka-test" />
         <module name="mapreduce-test" />
+        <module name="zookeeper-test" />
         <module name="hdfs-test" />
         <module name="hbase-test" />
         <module name="utils" />
@@ -22,6 +23,7 @@
       <module name="test-utils" target="8" />
       <module name="utils" target="8" />
       <module name="wer" target="8" />
+      <module name="zookeeper-test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
