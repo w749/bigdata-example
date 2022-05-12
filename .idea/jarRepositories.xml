@@ -22,6 +22,11 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="spring-snapshots" />
+      <option name="name" value="spring-snapshots" />
+      <option name="url" value="https://repo.spring.io/ui/native/libs-snapshot" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="conjars.org" />
       <option name="name" value="conjars.org" />
       <option name="url" value="http://conjars.org/repo" />
@@ -50,6 +55,11 @@
       <option name="id" value="elasticsearch-releases" />
       <option name="name" value="elasticsearch-releases" />
       <option name="url" value="https://maven.elasticsearch.org/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="cloudera-releases" />
+      <option name="name" value="cloudera-releases" />
+      <option name="url" value="https://repository.cloudera.com/artifactory/cloudera-repos" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="jboss.community" />

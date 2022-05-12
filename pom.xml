@@ -15,6 +15,7 @@
         <module>utils</module>
         <module>mapreduce-test</module>
         <module>zookeeper-test</module>
+        <module>flink-test</module>
     </modules>
 
     <properties>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/flink-test/flink-test.iml" filepath="$PROJECT_DIR$/flink-test/flink-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/hbase-test/hbase-test.iml" filepath="$PROJECT_DIR$/hbase-test/hbase-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/hdfs-test/hdfs-test.iml" filepath="$PROJECT_DIR$/hdfs-test/hdfs-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-test/kafka-test.iml" filepath="$PROJECT_DIR$/kafka-test/kafka-test.iml" />
