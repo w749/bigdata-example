@@ -20,6 +20,7 @@ public class FlinkWordCount {
 
     /**
      * DataSet批处理执行WordCount
+     * 逐渐开始弃用，使用DataStream API
      */
     @Test
     public void batchWordCount() throws Exception {
