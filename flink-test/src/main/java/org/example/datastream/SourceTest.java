@@ -11,6 +11,7 @@ import org.apache.flink.util.Collector;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.example.source.MySource;
+import org.example.util.Event;
 import org.example.util.PathUtils;
 import org.junit.Test;
 

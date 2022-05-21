@@ -5,8 +5,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4b74e9e-8496-41f2-84bb-6e888d9d5344" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/flink-test/flink-test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-test/src/main/java/org/example/wc/FlinkWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/wc/FlinkWordCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/data/input/Event" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/data/input/wordCount" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/data/output/file/2022-05-11--16/.part-0-0.inprogress.65ee9947-82f8-4b8b-9b17-2aad19279d54" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/data/output/file/2022-05-11--16/.part-1-0.inprogress.2e5a060d-0934-42d1-9352-08111235392e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/data/output/file/2022-05-11--16/.part-2-0.inprogress.58c80670-fd4e-49e2-93c1-c58d6168c92c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/data/output/file/2022-05-11--16/.part-6-0.inprogress.d315f81f-68b7-4bd6-b326-458fb3d3b4b0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/data/output/file/2022-05-11--16/.part-7-0.inprogress.d4873f81-c8e3-45ef-9dc9-dba6a4d929d5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/aggregate/MyAgg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/aggregate/MyAgg01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/aggregate/MyProcess01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/ProcessFunctionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/SplitUnionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/StateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/WatermarkTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/WindowOtherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/WindowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/connect/CoProcessFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/connect/ConnectExercise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/state/MapStateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/state/ValueStateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/topn/KeyedProcessFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/topn/TopNExercise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/topn/UrlAggFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/topn/UrlAggFuncAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/topn/UrlProcessFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/topn/UrlProcessFuncAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/topn/UrlViewCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/window/MapWindowFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/window/UVAggFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/window/UVProcessFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/window/WindowExercise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/exercise/window/WindowResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/util/SetUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/watermark/MyWaterMark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/joinOrder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/joinProduct" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/1/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/1/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/1/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/1/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/2/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/3/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/3/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/3/.part-r-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/3/.part-r-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/3/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/3/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/3/part-r-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/3/part-r-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/4/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/4/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/4/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/4/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/5/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/5/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/5/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/5/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/6/.A.log.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/6/.B.log.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/6/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/6/A.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/6/B.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/6/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/7/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/7/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/7/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/7/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/8/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/8/.part-m-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/8/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/8/part-m-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/9/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/9/.part-r-00000.bz2.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/9/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/9/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/output/9/part-r-00000.bz2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/outputFormat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/phoneFlow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapreduce-test/data/wordcount" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/util/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/FunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/FunctionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/SetUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/SinkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/SinkTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/SourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/SourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/TransformPartitionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/TransformPartitionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/TransformTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/datastream/TransformTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-test/src/main/java/org/example/source/MySource.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-test/src/main/java/org/example/source/MySource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +156,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="jdk.selected.JAVA_MODULE" value="8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/zookeeper-test/src/main/scala/org/example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mapreduce-test/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -84,31 +172,37 @@
       <recent name="org.mlamp.mapreduce.outputformat" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mapreduce-test/src/main/resources" />
+      <recent name="$PROJECT_DIR$/mapreduce-test/src/main/java/org/mlamp/mapreduce" />
       <recent name="$PROJECT_DIR$/zookeeper-test/src/main/scala/org/example" />
       <recent name="$PROJECT_DIR$/zookeeper-test/src/main/scala" />
       <recent name="$PROJECT_DIR$/zookeeper-test/src/main/java/com/qf/curator" />
-      <recent name="$PROJECT_DIR$/zookeeper-test" />
-      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.mlamp.mapreduce" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.mlamp.mapreduce" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinkTest.kafkaSinkTest">
-    <configuration name="SinkTest.fileSinkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MapStateTest.mapTest">
+    <configuration name="MapStateTest.mapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flink-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.datastream.*" />
+          <option name="PATTERN" value="org.example.exercise.state.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.datastream" />
-      <option name="MAIN_CLASS_NAME" value="org.example.datastream.SinkTest" />
-      <option name="METHOD_NAME" value="fileSinkTest" />
+      <option name="PACKAGE_NAME" value="org.example.exercise.state" />
+      <option name="MAIN_CLASS_NAME" value="org.example.exercise.state.MapStateTest" />
+      <option name="METHOD_NAME" value="mapTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinkTest.kafkaSinkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SplitUnionTest.coGroupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flink-test" />
       <extension name="coverage">
         <pattern>
@@ -117,14 +211,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.datastream" />
-      <option name="MAIN_CLASS_NAME" value="org.example.datastream.SinkTest" />
-      <option name="METHOD_NAME" value="kafkaSinkTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.datastream.SplitUnionTest" />
+      <option name="METHOD_NAME" value="coGroupTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransformPartitionTest.broadcastTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StateTest.stateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flink-test" />
       <extension name="coverage">
         <pattern>
@@ -133,14 +227,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.datastream" />
-      <option name="MAIN_CLASS_NAME" value="org.example.datastream.TransformPartitionTest" />
-      <option name="METHOD_NAME" value="broadcastTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.datastream.StateTest" />
+      <option name="METHOD_NAME" value="stateTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransformPartitionTest.globalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StateTest.valueStateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flink-test" />
       <extension name="coverage">
         <pattern>
@@ -149,24 +243,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.datastream" />
-      <option name="MAIN_CLASS_NAME" value="org.example.datastream.TransformPartitionTest" />
-      <option name="METHOD_NAME" value="globalTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.datastream.StateTest" />
+      <option name="METHOD_NAME" value="valueStateTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransformPartitionTest.myPartitionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ValueStateTest.valueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flink-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.datastream.*" />
+          <option name="PATTERN" value="org.example.exercise.state.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.datastream" />
-      <option name="MAIN_CLASS_NAME" value="org.example.datastream.TransformPartitionTest" />
-      <option name="METHOD_NAME" value="myPartitionTest" />
+      <option name="PACKAGE_NAME" value="org.example.exercise.state" />
+      <option name="MAIN_CLASS_NAME" value="org.example.exercise.state.ValueStateTest" />
+      <option name="METHOD_NAME" value="valueTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -207,21 +301,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TransformPartitionTest.broadcastTest" />
-      <item itemvalue="JUnit.TransformPartitionTest.globalTest" />
-      <item itemvalue="JUnit.TransformPartitionTest.myPartitionTest" />
-      <item itemvalue="JUnit.SinkTest.fileSinkTest" />
-      <item itemvalue="JUnit.SinkTest.kafkaSinkTest" />
       <item itemvalue="Remote JVM Debug.Unnamed" />
       <item itemvalue="Spring Boot.BootZkClientApplication" />
+      <item itemvalue="JUnit.SplitUnionTest.coGroupTest" />
+      <item itemvalue="JUnit.StateTest.valueStateTest" />
+      <item itemvalue="JUnit.ValueStateTest.valueTest" />
+      <item itemvalue="JUnit.StateTest.stateTest" />
+      <item itemvalue="JUnit.MapStateTest.mapTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SinkTest.kafkaSinkTest" />
-        <item itemvalue="JUnit.SinkTest.fileSinkTest" />
-        <item itemvalue="JUnit.TransformPartitionTest.myPartitionTest" />
-        <item itemvalue="JUnit.TransformPartitionTest.globalTest" />
-        <item itemvalue="JUnit.TransformPartitionTest.broadcastTest" />
+        <item itemvalue="JUnit.MapStateTest.mapTest" />
+        <item itemvalue="JUnit.StateTest.stateTest" />
+        <item itemvalue="JUnit.ValueStateTest.valueTest" />
+        <item itemvalue="JUnit.StateTest.valueStateTest" />
+        <item itemvalue="JUnit.SplitUnionTest.coGroupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -245,6 +339,10 @@
       <workItem from="1651721891928" duration="40383000" />
       <workItem from="1651971849472" duration="2591000" />
       <workItem from="1652063826558" duration="40799000" />
+      <workItem from="1652342579506" duration="29232000" />
+      <workItem from="1652683772778" duration="23846000" />
+      <workItem from="1652784149523" duration="41492000" />
+      <workItem from="1653117449557" duration="16101000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码，工具代码">
       <created>1651045031360</created>
@@ -274,11 +372,37 @@
       <option name="project" value="LOCAL" />
       <updated>1652062420293</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="zookeeper代码">
+      <created>1652322456459</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652322456459</updated>
+    </task>
+    <task id="LOCAL-00006" summary="flink代码">
+      <created>1652322501319</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652322501319</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -286,7 +410,8 @@
     <MESSAGE value="mapreduce" />
     <MESSAGE value="mapreduce练习代码" />
     <MESSAGE value="zookeeper代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="zookeeper代码" />
+    <MESSAGE value="flink代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="flink代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

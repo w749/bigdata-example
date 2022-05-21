@@ -3,6 +3,8 @@ package org.example.datastream;
 import org.apache.flink.api.common.functions.FilterFunction;
 import org.apache.flink.api.common.functions.RichMapFunction;
 import org.apache.flink.configuration.Configuration;
+import org.example.util.Event;
+import org.example.util.SetUp;
 import org.junit.Test;
 
 /**

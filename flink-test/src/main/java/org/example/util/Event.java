@@ -1,5 +1,6 @@
-package org.example.datastream;
+package org.example.util;
 
+import java.sql.Timestamp;
 import java.util.Objects;
 
 /**
@@ -62,7 +63,7 @@ public class Event {
         return "Event{" +
                 "user='" + user + '\'' +
                 ", url='" + url + '\'' +
-                ", time='" + time + '\'' +
+                ", time='" + new Timestamp(time) + '\'' +
                 '}';
     }
 

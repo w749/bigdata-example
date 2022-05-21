@@ -1,5 +1,6 @@
 package org.example.datastream;
 
+import org.example.util.SetUp;
 import org.junit.Test;
 
 /**

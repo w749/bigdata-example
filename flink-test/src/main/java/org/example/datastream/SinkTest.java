@@ -12,7 +12,9 @@ import org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer;
 import org.apache.flink.util.Collector;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
+import org.example.util.Event;
 import org.example.util.PathUtils;
+import org.example.util.SetUp;
 import org.junit.Test;
 
 import java.util.Properties;

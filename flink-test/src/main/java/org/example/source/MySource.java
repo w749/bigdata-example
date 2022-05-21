@@ -1,7 +1,8 @@
 package org.example.source;
 
 import org.apache.flink.streaming.api.functions.source.ParallelSourceFunction;
-import org.example.datastream.Event;
+import org.apache.flink.streaming.api.watermark.Watermark;
+import org.example.util.Event;
 
 import java.util.Random;
 
@@ -23,7 +24,10 @@ public class MySource implements ParallelSourceFunction<Event> {
         while (running) {
             user = users[random.nextInt(users.length)];
             url = urls[random.nextInt(urls.length)];
-            ctx.collect(new Event(user, url, System.currentTimeMillis()));
+//            ctx.collect(new Event(user, url, System.currentTimeMillis()));  // 只发送数据
+            // 带事件时间发送数据，并且发送Watermark
+            ctx.collectWithTimestamp(new Event(user, url, System.currentTimeMillis()), System.currentTimeMillis());
+            ctx.emitWatermark(new Watermark(System.currentTimeMillis() -1L));
             Thread.sleep(1000L);
         }
     }

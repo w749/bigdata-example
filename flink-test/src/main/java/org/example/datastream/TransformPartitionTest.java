@@ -3,6 +3,7 @@ package org.example.datastream;
 import org.apache.flink.api.common.functions.Partitioner;
 import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction;
+import org.example.util.SetUp;
 import org.junit.Test;
 
 /**
@@ -11,10 +12,10 @@ import org.junit.Test;
  *     shuffle：对上一个算子的数据打乱后随机选择分区传入到下一个算子
  *     rebalance：对上一个算子的数据进行分区轮训传入到下一个算子，Flink默认就是rebalance
  *     rescale：跟rebalance差不多，但是不同的是它是分组进行轮训，相较于rebalance可能会跨TaskManager rescale的效率会更高
- *     broadcast：将上游所有数据平均都发送到下游每一个分区中
+ *     broadcast：将上游所有数据发送给下游每一个分区中
  *     global：强行将上游所有分区的数据归到一个分区中，此时下游设置分区也没用
  */
-public class TransformPartitionTest implements SetUp{
+public class TransformPartitionTest implements SetUp {
     /**
      * 测试shuffle
      * 首先使得整体的并行度为1，那么data只有一个分区，随后shuffle随机分区到print四个分区中

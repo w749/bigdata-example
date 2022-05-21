@@ -1,0 +1,10 @@
+Alice,abc,1000
+Fired,abc,2500
+Alice,xyz,6500
+Fired,xyz,9000
+Bob,abc,10000
+Bob,xyz,11999
+Friend,abc,12000
+Alice,cdf,12001
+Fired,cdf,6000
+Fired,xyz,70000
