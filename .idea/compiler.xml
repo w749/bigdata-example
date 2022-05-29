@@ -14,6 +14,7 @@
         <module name="zookeeper-test" />
         <module name="hdfs-test" />
         <module name="flink-test" />
+        <module name="spark-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="kafka-test" target="1.8" />
       <module name="mapreduce-test" target="1.8" />
       <module name="project-test" target="8" />
+      <module name="spark-test" target="1.8" />
       <module name="test-utils" target="1.8" />
       <module name="utils" target="1.8" />
       <module name="wer" target="8" />

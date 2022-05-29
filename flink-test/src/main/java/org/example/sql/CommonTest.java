@@ -12,8 +12,12 @@ import java.time.Duration;
  *     Watermark、事件时间、处理时间
  *     开窗计算、Over开窗
  *     状态TTL
+ *     实现TopN
+ *     Join操作
+ *     Deduplication去重
+ *     系统函数：https://nightlies.apache.org/flink/flink-docs-release-1.13/docs/dev/table/functions/systemfunctions/
  */
-public class SQLTest implements SetUp {
+public class CommonTest implements SetUp {
     /**
      * 可以把连接外部数据源当作sql新建表的操作，source和sink都可以这样操作
      *     Flink SQL支持常见的FileSystem、ES、Kafka、JDBC、HBase、Hive等作为Source或者Sink
@@ -120,5 +124,81 @@ public class SQLTest implements SetUp {
                 "  PARTITION BY product " +
                 "  ORDER BY order_time " +
                 "  RANGE BETWEEN INTERVAL '1' HOUR PRECEDING AND CURRENT ROW)";  // 写在WINDOW中并指定名称，之后就可以重复使用，增加代码可读性
+    }
+
+    /**
+     * 实现TopN
+     */
+    @Test
+    public void topNTest() {
+        // 常规使用over开窗实现累计topN
+        String overTopN = "SELECT * " +
+                "FROM ( " +
+                "  SELECT *, " +
+                "    ROW_NUMBER() OVER (PARTITION BY category ORDER BY sales DESC) AS row_num " +
+                "  FROM ShopSales) " +
+                "WHERE row_num <= 5";
+        // 实现窗口内topN，只需把over内的表换成开窗后的结果表
+        String windowTopN = "SELECT * " +
+                "  FROM ( " +
+                "    SELECT *, ROW_NUMBER() OVER (PARTITION BY window_start, window_end ORDER BY price DESC) as rownum " +
+                "    FROM ( " +
+                "      SELECT window_start, window_end, supplier_id, SUM(price) as price, COUNT(*) as cnt " +
+                "      FROM TABLE( " +
+                "        TUMBLE(TABLE Bid, DESCRIPTOR(bidtime), INTERVAL '10' MINUTES)) " +
+                "      GROUP BY window_start, window_end, supplier_id " +
+                "    ) " +
+                "  ) WHERE rownum <= 3;";
+    }
+    /**
+     * Join操作
+     *     1. INNER JOIN、LEFT JOIN、RIGHT JOIN、FULL OUTER JOIN
+     *     2. 间隔联结，就是底层InternalJoin的sql实现，时间间隔的指定支持三种写法
+     *         lTime = rTime
+     *         lTime >= rTime AND lTime < rTime + INTERVAL '10' MINUTE
+     *         lTime BETWEEN rTime - INTERVAL '10' SECOND AND rTime + INTERVAL '5' SECOND
+     *     3. Temporal Join：看官网解释它就是BroadcastState广播流状态的实现，左边的数据流联结右边的版本流，从版本流中取最新的版本数据与数据流联结
+     *       注意这个最新的定义是需要事件时间或者处理时间来确定的，可以查看org.example.exercise.state.OperatorStateTest#broadcastTest()方法
+     *
+     */
+    @Test
+    public void joinTest() {
+        // 1. 内联结和普通sql含义相同，另外同样可以实现左外联结、右外连接和全外联结，目前只支持等值联结
+        String innerJoin = "SELECT * " +
+                "FROM Order " +
+                "INNER JOIN Product " +
+                "ON Order.product_id = Product.id";
+
+        // 2. 间隔联结
+        String intervalJoin = "SELECT * " +
+                "FROM Order o, Shipment s " +
+                "WHERE o.id = s.order_id " +
+                "AND o.order_time BETWEEN s.ship_time - INTERVAL '4' HOUR AND s.ship_time";
+
+        // 3. 时间联结，或者广播联结
+        // 根据事件时间获取版本流（currency_rates）中的最新版本（conversion_rate），注意两条流必须都设置了事件时间和watermark
+        String temEventJoin = "SELECT order_id, price, currency, conversion_rate, order_time " +
+                "FROM orders " +
+                "LEFT JOIN currency_rates FOR SYSTEM_TIME AS OF orders.order_time " +
+                "ON orders.currency = currency_rates.currency";
+        // 使用处理时间更好理解一些，broadcastTest测试方法使用的就是处理时间，它始终返回最新的版本表内容与数据流联结，利用proctime关键字指定
+        String temProcessJoin = "SELECT o.amount, o.currency, r.rate, o.amount * r.rate " +
+                "FROM Orders AS o " +
+                "  JOIN LatestRates FOR SYSTEM_TIME AS OF o.proctime AS r " +
+                "  ON r.currency = o.currency";
+    }
+
+    /**
+     * Deduplication去重
+     *     利用over开窗后取row_number为1的记录即可实现全局去重
+     */
+    @Test
+    public void dupTest() {
+        String dup = "SELECT order_id, user, product, num " +
+                "FROM ( " +
+                "  SELECT *, " +
+                "    ROW_NUMBER() OVER (PARTITION BY order_id ORDER BY proctime ASC) AS row_num " +
+                "  FROM Orders) " +
+                "WHERE row_num = 1";
     }
 }

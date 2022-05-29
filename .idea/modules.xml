@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/hdfs-test/hdfs-test.iml" filepath="$PROJECT_DIR$/hdfs-test/hdfs-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-test/kafka-test.iml" filepath="$PROJECT_DIR$/kafka-test/kafka-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/mapreduce-test/mapreduce-test.iml" filepath="$PROJECT_DIR$/mapreduce-test/mapreduce-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spark-test/spark-test.iml" filepath="$PROJECT_DIR$/spark-test/spark-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-utils.iml" filepath="$PROJECT_DIR$/test-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/zookeeper-test/zookeeper-test.iml" filepath="$PROJECT_DIR$/zookeeper-test/zookeeper-test.iml" />

@@ -31,23 +31,26 @@ public interface SetUp {
     StreamTableEnvironment tableEnvStream = StreamTableEnvironment.create(env);
     // 创建表SQL语句
     String fileInput = "CREATE TABLE inputTable(" +
-            "user_name STRING, " +
-            "url STRING, " +
-            "ts BIGINT ) WITH (" +
+            "  user_name STRING, " +
+            "  url STRING, " +
+            "  ts BIGINT ) " +
+            "WITH (" +
             "  'connector' = 'filesystem', " +
             "  'path' = '/Users/mlamp/workspace/my/test-utils/flink-test/data/input/Event', " +
             "  'format' = 'csv' " +
             ")";
     String fileOutput = "CREATE TABLE outputTable(" +
-            "user_name STRING, " +
-            "url STRING ) WITH (" +
+            "  user_name STRING, " +
+            "  url STRING ) " +
+            "WITH (" +
             "  'connector' = 'filesystem', " +
             "  'path' = '/Users/mlamp/workspace/my/test-utils/flink-test/data/output/table', " +
             "  'format' = 'csv' " +
             ")";
     String consoleOutput = "CREATE TABLE outputTable2(" +
-            "user_name STRING, " +
-            "url STRING ) WITH (" +
+            "  user_name STRING, " +
+            "  url STRING ) " +
+            "WITH (" +
             "  'connector' = 'print' " +
             ")";
     String kafkaInput = "CREATE TABLE KafkaTable (" +
@@ -61,6 +64,15 @@ public interface SetUp {
             "  'properties.bootstrap.servers' = 'localhost:9092', " +
             "  'properties.group.id' = 'testGroup', " +
             "  'scan.startup.mode' = 'earliest-offset', " +
+            "  'format' = 'csv' " +
+            ")";
+    String aggInput = "CREATE TABLE tmp ( " +
+            "  name StRING, " +
+            "  score INT, " +
+            "  weight INT ) " +
+            "WITH ( " +
+            "  'connector' = 'filesystem', " +
+            "  'path' = '/Users/mlamp/workspace/my/test-utils/flink-test/data/input/sqlAgg', " +
             "  'format' = 'csv' " +
             ")";
 
