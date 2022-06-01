@@ -17,6 +17,7 @@
         <module>zookeeper-test</module>
         <module>flink-test</module>
         <module>spark-test</module>
+        <module>yarn-test</module>
     </modules>
 
     <properties>

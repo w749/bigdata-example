@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/spark-test/spark-test.iml" filepath="$PROJECT_DIR$/spark-test/spark-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-utils.iml" filepath="$PROJECT_DIR$/test-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yarn-test/yarn-test.iml" filepath="$PROJECT_DIR$/yarn-test/yarn-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/zookeeper-test/zookeeper-test.iml" filepath="$PROJECT_DIR$/zookeeper-test/zookeeper-test.iml" />
     </modules>
   </component>
