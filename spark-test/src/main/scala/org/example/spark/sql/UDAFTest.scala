@@ -17,7 +17,7 @@ object UDAFTest {
 
     ds.createOrReplaceTempView("record")
     spark.udf.register("myudaf01", new MyUDAF01)
-    spark.udf.register("myudaf02", functions.udaf(new MyUDAF02))
+//    spark.udf.register("myudaf02", functions.udaf(new MyUDAF02))
     spark.sql(
       """
         |select store, myudaf01(payment), myudaf02(payment) from record group by store

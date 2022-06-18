@@ -77,6 +77,11 @@
       <option name="url" value="https://repository.cloudera.com/artifactory/cloudera-repos/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="alimaven" />
+      <option name="name" value="aliyun maven" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="beiing-adm" />
       <option name="name" value="beijin" />
       <option name="url" value="http://123.137.192.10:8888/nexus/content/groups/public/" />

@@ -31,7 +31,7 @@ object UDFTest {
     // TODO 3. 自定义UDAF函数（强类型UAggregator）
     println("=====3. 自定义UDAF函数-强类型======")
     // Spark3.0之后使用强类型方法，输入直接传入目标字段的类型，sql是弱类型操作，Aggregator是强类型，需要functions.udaf做转换
-    spark.udf.register("myAvg02", functions.udaf(new MyAvg02))
+//    spark.udf.register("myAvg02", functions.udaf(new MyAvg02))
     spark.sql("select myAvg02(age) as age_avg02 from newUser").show
 
     // Spark3.0之前使用强类型方法，在Dataset上做查询，直接将聚合函数转换为查询的列，输入传入Dataset的类型，然后在处理数据时选择目标字段

@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/example.iml" filepath="$PROJECT_DIR$/example.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-test/flink-test.iml" filepath="$PROJECT_DIR$/flink-test/flink-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/hbase-test/hbase-test.iml" filepath="$PROJECT_DIR$/hbase-test/hbase-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/hdfs-test/hdfs-test.iml" filepath="$PROJECT_DIR$/hdfs-test/hdfs-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-test/kafka-test.iml" filepath="$PROJECT_DIR$/kafka-test/kafka-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/mapreduce-test/mapreduce-test.iml" filepath="$PROJECT_DIR$/mapreduce-test/mapreduce-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spark-test/spark-test.iml" filepath="$PROJECT_DIR$/spark-test/spark-test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test-utils.iml" filepath="$PROJECT_DIR$/test-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/yarn-test/yarn-test.iml" filepath="$PROJECT_DIR$/yarn-test/yarn-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/zookeeper-test/zookeeper-test.iml" filepath="$PROJECT_DIR$/zookeeper-test/zookeeper-test.iml" />
     </modules>
   </component>

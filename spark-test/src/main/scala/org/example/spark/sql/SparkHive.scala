@@ -94,7 +94,7 @@ object SparkHive {
     *   2.6 最后是处理合并后的Buffer，新建一个可变数组用来接收最终的结果，然后对Buffer内的Map转List之后按点击量排序取前两个城市
     *       接下来遍历这两个城市，将它按格式插入最终的可变数组中，最后处理城市数量大于2的并返回可变数组mkString按逗号拼接的字符串
     * */
-    spark.udf.register("remarkCity", functions.udaf(new RemarkCity()))
+//    spark.udf.register("remarkCity", functions.udaf(new RemarkCity()))  // 要在spark3.0.0以上使用
     spark.sql(
       """
         |select city.area, product.product_name, count(click.city_id) click_count, remarkCity(city_name) remark_city
