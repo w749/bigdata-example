@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>test-utils</artifactId>
+        <artifactId>example</artifactId>
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
@@ -12,8 +12,8 @@
     <artifactId>spark-test</artifactId>
 
     <properties>
-        <spark.version>2.4.8</spark.version>
-        <scala.version.binary>2.11</scala.version.binary>
+        <spark.version>3.1.2</spark.version>
+        <scala.version.binary>2.12</scala.version.binary>
         <hadoop.version>3.1.1</hadoop.version>
     </properties>
 
@@ -32,12 +32,12 @@
             <groupId>ru.yandex.clickhouse</groupId>
             <artifactId>clickhouse-jdbc</artifactId>
             <version>0.2.4</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.google.guava</groupId>
-                    <artifactId>guava</artifactId>
-                </exclusion>
-            </exclusions>
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>com.google.guava</groupId>-->
+<!--                    <artifactId>guava</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>

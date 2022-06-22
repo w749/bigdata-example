@@ -19,14 +19,14 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="example" target="1.8" />
-      <module name="flink-test" target="8" />
-      <module name="hbase-test" target="8" />
-      <module name="hdfs-test" target="8" />
-      <module name="kafka-test" target="8" />
-      <module name="mapreduce-test" target="8" />
+      <module name="flink-test" target="1.8" />
+      <module name="hbase-test" target="1.8" />
+      <module name="hdfs-test" target="1.8" />
+      <module name="kafka-test" target="1.8" />
+      <module name="mapreduce-test" target="1.8" />
       <module name="project-test" target="8" />
       <module name="spark-test" target="1.8" />
-      <module name="utils" target="8" />
+      <module name="utils" target="1.8" />
       <module name="wer" target="8" />
       <module name="yarn-test" target="1.8" />
       <module name="zookeeper-test" target="1.8" />
