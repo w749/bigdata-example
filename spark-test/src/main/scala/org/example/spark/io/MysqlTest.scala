@@ -12,6 +12,8 @@ import scala.util.Random
 
 /**
  * Spark读写Mysql分别使用RDD和DataFrame
+ *   读取的时候需要注意一个参数配置：`zeroDateTimeBehavior=CONVERT_TO_NULL`，Java 或 Scala 连接 MySQL 数据库，在操作值为0的 timestamp 类型时不能正确的处理，而是默认抛出一个异常，就是所见的：`java.sql.SQLException: Cannot convert value '0000-00-00 00:00:00' from column 3 to TIMESTAMP`。
+ *   官方文档给出的解决办法就是配置`zeroDateTimeBehavior`参数，该参数有三个属性值，分别是exception（抛出异常，默认）、convertToNull（转换为 null ）和 round （替换为最近的日期），常用的就是指定为`convertToNull`
  */
 class MysqlTest extends Serializable {
   private val session: SparkSession = SparkSession.builder()
@@ -23,7 +25,7 @@ class MysqlTest extends Serializable {
   // 因为foreach会用到类的成员变量sc，所以类必须支持序列化，同时标记sc不需要序列化
   @transient
   private val sc: SparkContext = session.sparkContext
-  private val url = "jdbc:mysql://win:6606/test?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai"
+  private val url = "jdbc:mysql://win:6606/test?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=CONVERT_TO_NULL"
   private val driver = "com.mysql.cj.jdbc.Driver"
   private val user = "root"
   private val password = "123456"
