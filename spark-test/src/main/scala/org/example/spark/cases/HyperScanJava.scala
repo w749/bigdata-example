@@ -1,7 +1,6 @@
 package org.example.spark.cases
 
 import com.gliwka.hyperscan.wrapper.{CompileErrorException, Database, Expression, ExpressionFlag, Scanner}
-import org.apache.spark.sql.catalog.Database
 import org.example.spark.Utils
 
 import java.util

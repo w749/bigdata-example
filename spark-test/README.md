@@ -48,6 +48,8 @@ Spark分别使用RDD和DataFrame读写Mysql
 
 自定义MultipleTextOutputFormat，满足根据key自定义输出目录以及输出文件名称的需求，并且不输出key
 
+多目录输出的前提是基础目录不存在，不然就会报错，SparkHadoopWriter中的`getOutputFormat().checkOutputSpecs(ignoredFs, getConf)`方法检测到目录存在就会报错，如果有这方面的需求只能考虑输出到临时目录然后再使用spark读取输出到最终目录
+
 ## Spark获取输入的数据所属文件名称
 [GetInputFileName](https://github.com/w749/bigdata-example/blob/master/spark-test/src/main/scala/org/example/spark/cases/GetInputFileName.scala)
 
