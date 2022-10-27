@@ -61,3 +61,8 @@ Spark获取输入的数据所属文件名称，如需获取全路径可以在get
 Spark指定每个分区的输出大小，提供了三种方法，分别是自定义分区器（repartitionData）、重分区（restoreData），这两种方法主要利用了FileSystem的getContentSummary方法获取到输入数据的大小，计算出输出指定大小的分区所需的分区数量，
 第三种方法通过控制split size的目的达到控制每个分区的数据大小，但是这种方法会将超出指定大小的数据单存到一个文件中（128M会分为100M和28M），达不到所有文件的大小相等，经过测试restoreData方法最靠谱。
 这几种方式必须是输入和输出数据相同未经过过滤或者flat，如果输入输出数据大小不相同可以借助临时目录
+
+## SparkListener
+[SparkListenerCase](https://github.com/w749/bigdata-example/blob/master/spark-test/src/main/scala/org/example/spark/cases/SparkListenerCase.scala)
+
+SparkListener监听器，负责监视Spark作业运行时的状态，可以自定义实现SparkListener收集运行时的状态
