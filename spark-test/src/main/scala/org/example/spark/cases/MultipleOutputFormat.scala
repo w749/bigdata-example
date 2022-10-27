@@ -1,6 +1,7 @@
 package org.example.spark.cases
 
 import org.apache.hadoop.fs.FileSystem
+import org.apache.hadoop.io.NullWritable
 import org.apache.hadoop.mapred.{JobConf, RecordWriter, Reporter}
 import org.apache.hadoop.mapred.lib.MultipleTextOutputFormat
 import org.apache.hadoop.util.Progressable
@@ -39,6 +40,10 @@ object MultipleOutputFormat {
  * 根据数据内容自定义输出目录和文件名
  */
 class MultipleOutputFormat extends MultipleTextOutputFormat[String, String] {
+  // 简单点，重写这个方法将实际的key设为null也可以达到不输出key的目的
+  override def generateActualKey(key: String, value: String): String = {
+    NullWritable.get().asInstanceOf[String]
+  }
   override def generateFileNameForKeyValue(key: String, value: String, name: String): String = {
     val split = value.split("\\|")
     val ts = split(2).toLong * 1000

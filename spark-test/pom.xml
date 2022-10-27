@@ -13,14 +13,20 @@
 
     <properties>
         <spark.version>3.1.2</spark.version>
-        <scala.version.binary>2.12</scala.version.binary>
+        <scala.binary.version>2.12</scala.binary.version>
+        <scala.version>2.12.11</scala.version>
         <hadoop.version>3.1.1</hadoop.version>
     </properties>
 
     <dependencies>
         <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_${scala.version.binary}</artifactId>
+            <artifactId>spark-core_${scala.binary.version}</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
@@ -41,12 +47,12 @@
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-yarn_${scala.version.binary}</artifactId>
+            <artifactId>spark-yarn_${scala.binary.version}</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-sql_${scala.version.binary}</artifactId>
+            <artifactId>spark-sql_${scala.binary.version}</artifactId>
             <version>${spark.version}</version>
         </dependency>
 <!--        <dependency>-->
@@ -57,12 +63,12 @@
 
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming_${scala.version.binary}</artifactId>
+            <artifactId>spark-streaming_${scala.binary.version}</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming-kafka-0-10_${scala.version.binary}</artifactId>
+            <artifactId>spark-streaming-kafka-0-10_${scala.binary.version}</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
@@ -83,7 +89,7 @@
         </dependency>
         <dependency>
             <groupId>com.crealytics</groupId>
-            <artifactId>spark-excel_${scala.version.binary}</artifactId>
+            <artifactId>spark-excel_${scala.binary.version}</artifactId>
             <version>0.13.7</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-distcp -->
