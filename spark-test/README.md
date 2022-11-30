@@ -62,7 +62,12 @@ Spark指定每个分区的输出大小，提供了三种方法，分别是自定
 第三种方法通过控制split size的目的达到控制每个分区的数据大小，但是这种方法会将超出指定大小的数据单存到一个文件中（128M会分为100M和28M），达不到所有文件的大小相等，经过测试restoreData方法最靠谱。
 这几种方式必须是输入和输出数据相同未经过过滤或者flat，如果输入输出数据大小不相同可以借助临时目录
 
-## SparkListener
+## SparkListener事件监听
 [SparkListenerCase](https://github.com/w749/bigdata-example/blob/master/spark-test/src/main/scala/org/example/spark/cases/SparkListenerCase.scala)
 
 SparkListener监听器，负责监视Spark作业运行时的状态，可以自定义实现SparkListener收集运行时的状态
+
+## TaskFailedListener监控失败Task
+[TaskFailedListener](https://github.com/w749/bigdata-example/blob/master/spark-test/src/main/scala/org/example/spark/cases/TaskFailedListener.scala)
+
+TaskFailedListener监听器，可收集Task运行错误时的信息，代码中只是打印出来，也可以实现发送邮件或者其它接口（不过最好保存发送邮件的状态，不然在短时间内可能会频繁收到多条邮件）
