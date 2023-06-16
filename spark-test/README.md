@@ -71,3 +71,13 @@ SparkListener监听器，负责监视Spark作业运行时的状态，可以自�
 [TaskFailedListener](https://github.com/w749/bigdata-example/blob/master/spark-test/src/main/scala/org/example/spark/cases/TaskFailedListener.scala)
 
 TaskFailedListener监听器，可收集Task运行错误时的信息，代码中只是打印出来，也可以实现发送邮件或者其它接口（不过最好保存发送邮件的状态，不然在短时间内可能会频繁收到多条邮件）
+
+## PathFilter按规则过滤目录
+[PathFilter](https://github.com/w749/bigdata-example/blob/master/spark-test/src/main/scala/org/example/spark/cases/PathFilter.scala)
+
+使用正则表达式或者其它规则过滤掉HDFS文件中不符合规则的文件
+
+## IgnoreCorruptFiles跳过错误文件
+[IgnoreCorruptFiles](https://github.com/w749/bigdata-example/blob/master/spark-test/src/main/scala/org/example/spark/cases/IgnoreCorruptFiles.scala)
+
+Spark读取输入时过滤掉出现IOException的文件，这对于读取文件损坏的压缩文件很有用

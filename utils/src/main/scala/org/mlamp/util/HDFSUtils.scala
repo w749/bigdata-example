@@ -4,7 +4,7 @@ import org.apache.hadoop.fs.FileSystem
 import org.apache.hadoop.fs.Path
 import org.apache.spark.sql.SparkSession
 
-class HDFSUtil(val session: SparkSession) {
+class HDFSUtils(val session: SparkSession) {
   private val hdfs = FileSystem.get(session.sessionState.newHadoopConf)
 
   /**

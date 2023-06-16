@@ -10,13 +10,13 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
 <!--        <module>hbase-test</module>-->
-<!--        <module>hdfs-test</module>-->
+<!--        <module>hdfcs-test</module>-->
 <!--        <module>kafka-test</module>-->
-<!--        <module>utils</module>-->
+        <module>utils</module>
 <!--        <module>mapreduce-test</module>-->
 <!--        <module>zookeeper-test</module>-->
-<!--        <module>flink-test</module>-->
-        <module>spark-test</module>
+        <module>flink-test</module>
+<!--        <module>spark-test</module>-->
     </modules>
 
     <properties>

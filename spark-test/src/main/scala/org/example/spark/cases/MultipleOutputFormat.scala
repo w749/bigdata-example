@@ -1,15 +1,11 @@
 package org.example.spark.cases
 
-import org.apache.hadoop.fs.FileSystem
 import org.apache.hadoop.io.NullWritable
-import org.apache.hadoop.mapred.{JobConf, RecordWriter, Reporter}
 import org.apache.hadoop.mapred.lib.MultipleTextOutputFormat
-import org.apache.hadoop.util.Progressable
 import org.apache.spark.{SparkConf, SparkContext}
 import org.example.spark.Utils
 
 import java.text.SimpleDateFormat
-import java.util
 import java.util.Date
 
 /**
@@ -40,7 +36,7 @@ object MultipleOutputFormat {
  * 根据数据内容自定义输出目录和文件名
  */
 class MultipleOutputFormat extends MultipleTextOutputFormat[String, String] {
-  // 简单点，重写这个方法将实际的key设为null也可以达到不输出key的目的
+  // 重写这个方法将实际的key设为null可以达到不输出key的目的
   override def generateActualKey(key: String, value: String): String = {
     NullWritable.get().asInstanceOf[String]
   }
@@ -51,41 +47,5 @@ class MultipleOutputFormat extends MultipleTextOutputFormat[String, String] {
     val hour = new Date(ts).getHours.toString
     val newName = s"part-${key}-${date}-${hour}-${name.split("-")(1)}"
     if (key == "get") s"get/${newName}" else s"post/${newName}"
-  }
-
-  // 自定义RecordWriter，不输出key
-  override def getRecordWriter(fs: FileSystem, job: JobConf, name: String, arg3: Progressable): RecordWriter[String, String] = {
-    val myFS: FileSystem = fs
-    val myName: String = generateLeafFileName(name)
-    val myJob: JobConf = job
-    val myProgressable: Progressable = arg3
-
-    new RecordWriter[String, String]() {
-      val recordWriters: util.TreeMap[String, RecordWriter[String, String]] = new util.TreeMap[String, RecordWriter[String, String]]
-
-      override def write(key: String, value: String): Unit = {
-        val keyBasedPath: String = generateFileNameForKeyValue(key, value, myName)
-        val finalPath: String = getInputFileBasedOutputFileName(myJob, keyBasedPath)
-        val actualKey: String = null  // 指定为null即可，它也不会输出制表符，查看org.apache.hadoop.mapred.TextOutputFormat.LineRecordWriter.write方法
-        val actualValue: String = generateActualValue(key, value)
-        var rw: RecordWriter[String, String] = this.recordWriters.get(finalPath)
-        if (rw == null) {
-          rw = getBaseRecordWriter(myFS, myJob, finalPath, myProgressable)
-          this.recordWriters.put(finalPath, rw)
-        }
-        rw.write(actualKey, actualValue)
-      }
-
-      override def close(reporter: Reporter): Unit = {
-        val keys: util.Iterator[String] = this.recordWriters.keySet.iterator
-        while ( {
-          keys.hasNext
-        }) {
-          val rw: RecordWriter[String, String] = this.recordWriters.get(keys.next)
-          rw.close(reporter)
-        }
-        this.recordWriters.clear()
-      }
-    }
   }
 }

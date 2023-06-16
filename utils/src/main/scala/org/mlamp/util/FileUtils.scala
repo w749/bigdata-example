@@ -4,7 +4,7 @@ import java.io.File
 import java.util.regex.Pattern
 import scala.collection.mutable.ListBuffer
 
-class FileUtil {
+class FileUtils {
   /**
    * 新建空白文件
    */
